@@ -1,0 +1,37 @@
+/* CSS Document */
+
+/* common styling */
+
+/* Set up the default font and ovrall size to include image */
+ body {
+	background: #408080;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+#ad {float:right; margin:0 0 20px 20px;}
+/* default link styling needed for IE6 to work */
+a { color:#000;}
+a:visited {color:#000;}
+a:active {color:#000;}
+a:hover {text-decoration:none; color:#FF6600;}
+ /* remove the margin and bullets, set the padding for this demo only*/
+.button {margin:0; padding:15px 0 50px 18px; list-style:none;}
+
+ /* display the list items inline with a right margin to space the buttons. Use this to pre-load the hover image */
+.button li {display:inline; float:left; margin-right:5px; background:url(pics/hover_button.gif);}
+
+/* style the links and place the background image to start from left edge */
+.button li a {display:block; height:38px; float:left; background:url(pics/button.gif); text-decoration:none; font-size:12px; font-family:arial, sans-serif; letter-spacing:1px; line-height:35px;}
+
+/* style the b element to posiition it to the right by 20 pixels and even out the text with 20 pixel right padding */
+.button li b {margin:0 0 0 20px; display:inline; float:left; height:38px; background:url(pics/button.gif) right top; padding:0 20px 0 0; color:#000;}
+
+/* style the link hover and the link hover b to replace the background image - border:0 needed for IE6 to work */
+.button li a:hover, .button li a:hover b {border:0; background-image:url(pics/hover_button.gif); cursor:pointer;}
+
+/* style the active state to replace the background image. This can also be used for a 'current' tab if you wish */
+.button li a:active, .button li a:active b, .button li a.current, .button li a.current b {background-image: url(pics/active_button.gif);}
+
+/* move the text down by 3 pixels, and to the right by 2 pixels */
+.button li a:active b, .button li a.current b { line-height:38px; margin-left:21px; padding-right:19px;}
